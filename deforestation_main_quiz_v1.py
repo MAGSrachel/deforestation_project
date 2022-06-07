@@ -20,19 +20,15 @@ user_question = input(quiz['question'])
 if user_question == quiz['answers']:
     score += 1
     print("Correct! ")
-elif user_question == quiz:
-    print("Wrong answer")
 else:
-    print("Please choose one of the option")
+    print("Wrong answer")
 
 user_question = input(quiz['question2'])
 if user_question == quiz['answer2']:
     print("Correct! ")
     score += 1
-elif user_question == quiz:
-    print("Wrong answer")
 else:
-    print("Please choose one of the option")
+    print("Wrong answer")
 
 user_question = input(quiz['question3'])
 if user_question == quiz['answer3']:
