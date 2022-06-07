@@ -14,8 +14,6 @@ list_of_answer = ["A = Human activity", "B = The forest is a water cycle, soil, 
                   "D = Plant a tree, use less paper, reuse paper or cardboard"]
 
 # main
-
-
 user_question = input(quiz['question'])
 if user_question == quiz['answers']:
     score += 1
