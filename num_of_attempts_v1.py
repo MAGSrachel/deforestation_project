@@ -11,13 +11,12 @@ def num_of_attempts(attempts):
             else:
                 print("Please choose a number between 1-10")
         except ValueError:
-            print("Please enter a number")
+            print("Please choose a number")
             continue
 
 
 # asking the user if they want to do attempts
-num_attempts = input("Do you wish to add number of attempts?")
+yes_no = num_attempts = input("Do you wish to add number of attempts?")
 if num_attempts == "yes" or "y":
     num_of_attempts(attempts)
-elif num_attempts == "no" or "n":
-    print("Quiz continues")
+
