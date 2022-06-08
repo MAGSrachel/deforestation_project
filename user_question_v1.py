@@ -1,3 +1,7 @@
+name_user = input("Hello user, this is a little quiz about deforestation what is your name?")
+print("Hello {}".format(name_user))
+
+
 # asking the user question
 def yes_no(question):
     valid = False
@@ -34,7 +38,7 @@ def how_to_play():
 
 
 # asking the user if they know about deforestation
-user_question = yes_no("Do you know about deforestation?")
+user_question = yes_no("Do you know about deforestation {}?".format(name_user))
 if user_question == 'no' or 'n':
     facts_about_deforestation()
 
