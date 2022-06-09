@@ -14,8 +14,7 @@ def countdown(time_sec):
     print("stop")
 
 
-time_user = input("Do you wish to do a challenge where you have a limited time to answer the question?")
-if time_user == "yes" or "y":
+def user_time():
     print(list_of_time)
     user = input("How many minutes do you want?")
     if user == "1":
@@ -30,3 +29,10 @@ if time_user == "yes" or "y":
         countdown(300)
     else:
         print("Please choose one of the options")
+        return user_time()
+
+
+time_user = input("Do you wish to do a challenge where you have a limited time to answer the question?")
+
+if time_user == "yes" or time_user == "y":
+    user_time()
