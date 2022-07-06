@@ -62,182 +62,176 @@ num_of_scores = 0
 random.shuffle(list_of_answer)
 
 
-def main():
-    def question_1():
-        # these print the list that are on the top
-        print(list_of_answer)
-        print(meaning)
-        # this inputs the question in the dictionary with the first question
-        user_question = input(questions['questions'])
-        user_question = user_question.lower()
-        if user_question not in list_of_option:
-            print("Please choose one of the option")
-            return question_1()
-        elif user_question == answer['answers']:
-            global num_of_scores
-            num_of_scores += 1
-            print("Correct!")
-        else:
-            print("Incorrect")
-            pass
-
-    question_1()
-
-    def question_2():
-        print(list_of_answer)
-        print(meaning)
-        user_question = input(questions['question2'])
-        user_question = user_question.lower()
-        if user_question not in list_of_option:
-            print("Please choose one of the option")
-            return question_2()
-        elif user_question == answer['answer2']:
-            global num_of_scores
-            num_of_scores += 1
-            print("Correct!")
-        else:
-            pass
-
-    question_2()
-
-    def question_3():
-        print(list_of_answer)
-        print(meaning)
-        user_question = input(questions['question3'])
-        user_question = user_question.lower()
-        if user_question not in list_of_option:
-            print("Please choose one of the option")
-            return question_3()
-        elif user_question == answer['answer3']:
-            global num_of_scores
-            num_of_scores += 1
-            print("Correct!")
-        else:
-            pass
-
-    def question_4():
-        print(list_of_answer)
-        print(meaning)
-        user_question = input(questions['question4'])
-        user_question = user_question.lower()
-        if user_question not in list_of_option:
-            print("Please choose one of the option")
-            return question_4()
-        elif user_question == answer['answer4']:
-            global num_of_scores
-            num_of_scores += 1
-            print("Correct!")
-        else:
-            pass
-
-    question_4()
-
-    def question_5():
-        print(list_of_answer)
-        print(meaning)
-        user_question = input(questions['question5'])
-        user_question = user_question.lower()
-        if user_question not in list_of_option:
-            print("Please choose one of the option")
-            return question_5()
-        elif user_question == answer['answer5']:
-            global num_of_scores
-            num_of_scores += 1
-            print("Correct!")
-        else:
-            pass
-
-    question_5()
-
-    def question_6():
-        print(list_of_answer)
-        print(meaning)
-        user_question = input(questions['question6'])
-        user_question = user_question.lower()
-        if user_question not in list_of_option:
-            print("Please choose one of the option")
-            return question_6()
-        elif user_question == answer['answer6']:
-            global num_of_scores
-            num_of_scores += 1
-            print("Correct!")
-        else:
-            pass
-
-    question_6()
-
-    def question_7():
-        print(list_of_answer)
-        print(meaning)
-        user_question = input(questions['question7'])
-        user_question = user_question.lower()
-        if user_question not in list_of_option:
-            print("Please choose one of the option")
-            return question_7()
-        elif user_question == answer['answer7']:
-            global num_of_scores
-            num_of_scores += 1
-            print("Correct!")
-        else:
-            pass
-
-    question_7()
-
-    def question_8():
-        print(list_of_answer)
-        print(meaning)
-        user_question = input(questions['question8'])
-        user_question = user_question.lower()
-        if user_question not in list_of_option:
-            print("Please choose one of the option")
-            return question_8()
-        elif user_question == answer['answer8']:
-            global num_of_scores
-            num_of_scores += 1
-            print("Correct!")
-        else:
-            pass
-
-    question_8()
-
-    def question_9():
-        print(list_of_answer)
-        print(meaning)
-        user_question = input(questions['question9'])
-        user_question = user_question.lower()
-        if user_question not in list_of_option:
-            print("Please choose one of the option")
-            return question_9()
-        elif user_question == answer['answer9']:
-            global num_of_scores
-            num_of_scores += 1
-            print("Correct!")
-        else:
-            pass
-
-    question_9()
-
-    def question_10():
-        print(list_of_answer)
-        print(meaning)
-        user_question = input(questions['question10'])
-        user_question = user_question.lower()
-        if user_question not in list_of_option:
-            print("Please choose one of the option")
-            return question_10()
-        elif user_question == answer['answer10']:
-            global num_of_scores
-            num_of_scores += 1
-            print("Correct!")
-        else:
-            pass
-
-    question_10()
+def question_1():
+    # these print the list that are on the top
+    print(list_of_answer)
+    print(meaning)
+    # this inputs the question in the dictionary with the first question
+    user_question = input(questions['questions'])
+    user_question = user_question.lower()
+    if user_question not in list_of_option:
+        print("Please choose one of the option")
+        return question_1()
+    elif user_question == answer['answers'] or user_question == "A":
+        global num_of_scores
+        num_of_scores += 1
+        print("Correct!")
+    else:
+        print("Incorrect")
+        pass
 
 
-main()
-print("You've got {}/10".format(num_of_scores))
+def question_2():
+    print(list_of_answer)
+    print(meaning)
+    user_question = input(questions['question2'])
+    user_question = user_question.lower()
+    if user_question not in list_of_option:
+        print("Please choose one of the option")
+        return question_2()
+    elif user_question == answer['answer2'] or user_question == "C":
+        global num_of_scores
+        num_of_scores += 1
+        print("Correct!")
+    else:
+        pass
 
+
+def question_3():
+    print(list_of_answer)
+    print(meaning)
+    user_question = input(questions['question3'])
+    user_question = user_question.lower()
+    if user_question not in list_of_option:
+        print("Please choose one of the option")
+        return question_3()
+    elif user_question == answer['answer3'] or user_question == "D":
+        global num_of_scores
+        num_of_scores += 1
+        print("Correct!")
+    else:
+        pass
+
+
+def question_4():
+    print(list_of_answer)
+    print(meaning)
+    user_question = input(questions['question4'])
+    user_question = user_question.lower()
+    if user_question not in list_of_option:
+        print("Please choose one of the option")
+        return question_4()
+    elif user_question == answer['answer4'] or user_question == "E":
+        global num_of_scores
+        num_of_scores += 1
+        print("Correct!")
+    else:
+        pass
+
+
+def question_5():
+    print(list_of_answer)
+    print(meaning)
+    user_question = input(questions['question5'])
+    user_question = user_question.lower()
+    if user_question not in list_of_option:
+        print("Please choose one of the option")
+        return question_5()
+    elif user_question == answer['answer5'] or user_question == "D":
+        global num_of_scores
+        num_of_scores += 1
+        print("Correct!")
+    else:
+        pass
+
+
+def question_6():
+    print(list_of_answer)
+    print(meaning)
+    user_question = input(questions['question6'])
+    user_question = user_question.lower()
+    if user_question not in list_of_option:
+        print("Please choose one of the option")
+        return question_6()
+    elif user_question == answer['answer6'] or user_question == "F":
+        global num_of_scores
+        num_of_scores += 1
+        print("Correct!")
+    else:
+        pass
+
+
+def question_7():
+    print(list_of_answer)
+    print(meaning)
+    user_question = input(questions['question7'])
+    user_question = user_question.lower()
+    if user_question not in list_of_option:
+        print("Please choose one of the option")
+        return question_7()
+    elif user_question == answer['answer7'] or user_question == "H":
+        global num_of_scores
+        num_of_scores += 1
+        print("Correct!")
+    else:
+        pass
+
+
+def question_8():
+    print(list_of_answer)
+    print(meaning)
+    user_question = input(questions['question8'])
+    user_question = user_question.lower()
+    if user_question not in list_of_option:
+        print("Please choose one of the option")
+        return question_8()
+    elif user_question == answer['answer8'] or user_question == "G":
+        global num_of_scores
+        num_of_scores += 1
+        print("Correct!")
+    else:
+        pass
+
+
+def question_9():
+    print(list_of_answer)
+    print(meaning)
+    user_question = input(questions['question9'])
+    user_question = user_question.lower()
+    if user_question not in list_of_option:
+        print("Please choose one of the option")
+        return question_9()
+    elif user_question == answer['answer9'] or user_question == "I":
+        global num_of_scores
+        num_of_scores += 1
+        print("Correct!")
+    else:
+        pass
+
+
+def question_10():
+    print(list_of_answer)
+    print(meaning)
+    user_question = input(questions['question10'])
+    user_question = user_question.lower()
+    if user_question not in list_of_option:
+        print("Please choose one of the option")
+        return question_10()
+    elif user_question == answer['answer10'] or user_question == "J":
+        global num_of_scores
+        num_of_scores += 1
+        print("Correct!")
+    else:
+        pass
+
+
+for i in range(1, 10):
+    str = f"question_{i}()"
+    print(str)
+
+    eval(str)  # call function
+
+    print("You've got {}/10".format(num_of_scores))
 '''
 num = random.randint(1, 11)
 num = str(num)
